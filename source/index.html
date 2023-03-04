@@ -52,6 +52,7 @@
               <p class="logo__text-slogan logo__text--header">умные технологии</p>
             </div>
           </a>
+          <!-- <div class="header__contacts-wrapper"> -->
           <a class="header__contact header__contact--mail" href="mailto:info@sd.ru">
             <svg class="header__contact-mail-icon" aria-hidden="true" focusable="false" width="21" height="20"
               viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -220,7 +221,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container container">
+      <div class="footer__container container container--footer">
         <div class="footer__logo-social-wrapper">
           <a href="#" class="footer__logo logo">
             <svg class="logo__icon" aria-hidden="true" focusable="false" width="55" height="55" viewBox="0 0 55 55"
@@ -312,10 +313,13 @@
             </ul>
           </div>
         </div>
-        <nav class="footer__site-navigation">
+        <nav class="footer__site-navigation is-close no-js">
           <h3 class="footer__title">
             Разделы сайта
           </h3>
+          <button class="footer__site-navigation-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="footer__site-navigation-list list-null">
             <li class="footer__site-navigation-item">
               <a class="footer__link" href="#">О Компании</a>
@@ -340,8 +344,12 @@
             </li>
           </ul>
         </nav>
-        <div class="footer__contacts">
+        <div class="footer__contacts is-close no-js">
           <h3 class="footer__title">Наш офис</h3>
+          <button class="footer__contacts-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="footer__contacts-wrapper">
           <p class="footer__contacts-address">
             г. Мытищи, Олимпийский проспект, д.10
           </p>
@@ -356,6 +364,7 @@
               <a class="footer__link" href="tel:+79253647813">+7 (925) 364-78-13</a>
             </li>
           </ul>
+        </div>
         </div>
       </div>
     </footer>
@@ -391,7 +400,7 @@
     </div> -->
 
   <!-- <script src="js/vendor.min.js"></script> -->
-  <!-- <script src="js/main.min.js"></script> -->
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
