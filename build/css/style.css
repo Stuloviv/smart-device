@@ -1703,6 +1703,74 @@ button,
   display: none;
 }
 
+.services {
+  background-color: #041827;
+}
+
+.services__container {
+  padding: 70px 0 140px;
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.services__title--mobile {
+  display: none;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.services__item {
+  position: relative;
+  width: 28.6%;
+}
+
+.services__item:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #00B2FF;
+  background-image: url("../../img/icons/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services__item-title {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  width: 170px;
+  margin: 0;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.services__item-link {
+  display: block;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1791,6 +1859,10 @@ button,
 
   .about__container {
     padding: 0 50px 120px 250px;
+  }
+
+  .services__container {
+    padding: 70px 30px 140px;
   }
 }
 
@@ -1933,6 +2005,25 @@ button,
     padding: 0 50px 80px 225px;
     background-position: 46px 0;
   }
+
+  .services__container {
+    padding: 60px 50px 75px;
+  }
+
+  .services__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .services__item {
+    width: 100%;
+  }
+
+  .services__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1966,7 +2057,9 @@ button,
     height: 35px;
   }
 
-  .logo__text--header {
+  .logo__text--header,
+  .logo__text-name--header,
+  .logo__text-slogan--header {
     display: none;
   }
 
@@ -2158,8 +2251,34 @@ button,
     line-height: 16px;
   }
 
-  .is-close .about__text--mobile-hidden {
+  .is-close .about__text-mobile-hidden {
     display: none;
+  }
+
+  .services__container {
+    padding: 50px 25px 86px;
+  }
+
+  .services__title {
+    display: none;
+  }
+
+  .services__title--mobile {
+    display: block;
+    width: 250px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .services__item::after {
+    width: 40px;
+    height: 40px;
+  }
+
+  .services__item-title {
+    top: 30px;
+    left: 30px;
+    font-size: 18px;
   }
 }
 
@@ -2244,5 +2363,10 @@ button,
   .main__header {
     background-image: url("../../img/header-background@2x.jpg");
     background-size: cover;
+  }
+
+  .about__container {
+    background-image: url("../../img/about-year-2022@2x.png");
+    background-size: 150px 320px;
   }
 }

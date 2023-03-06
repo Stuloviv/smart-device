@@ -23,7 +23,9 @@
   }
 }
 
-.logo__text--header {
+.logo__text--header,
+.logo__text-name--header,
+.logo__text-slogan--header {
 
   @media (max-width: 767px) {
     display: none;
