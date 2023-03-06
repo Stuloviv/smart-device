@@ -1,0 +1,128 @@
+.main__header {
+  background-color: #041827;
+  background-image: url('../../img/header-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/header-background@2x.jpg');
+    background-size: cover;
+  }
+
+  @media (max-width: 1919px) {
+    background-position: center;
+  }
+
+  @media (max-width: 1023px) {
+    background-position: -122px 10px;
+  }
+
+  @media (max-width: 767px) {
+    background-position: -229px 0;
+  }
+}
+
+.main__header-container {
+  padding: 305px 0 280px 125px;
+
+  @media (max-width: 1023px) {
+    margin-top: -100px;
+    padding: 180px 50px 205px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 150px 25px 190px;
+  }
+}
+
+.main__header-title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  line-height: 93px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #F2F5F6;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 20px;
+
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.main__header-about {
+  width: 685px;
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 22px;
+  line-height: 34px;
+  color: #F2F5F6;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 767px) {
+    width: 271px;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.main__header-consult {
+  display: block;
+
+  width: 410px;
+  padding: 15px 25px;
+  border-radius: 3px;
+
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #F2F5F6;
+
+  background-color: #00B2FF;
+  overflow: hidden;
+
+  @media (max-width: 1023px) {
+    margin-left: 45px;
+  }
+
+  @media (max-width: 767px) {
+    width: 270px;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.main__header-consult-not-mobile {
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.main__header-consult-mobile {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

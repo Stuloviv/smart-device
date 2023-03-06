@@ -1,0 +1,90 @@
+.about {}
+
+.about__container {
+  padding: 0 0 120px 250px;
+
+  background-image: url('../../img/about-year-2022.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (max-width: 1919px) {
+    padding: 0 50px 120px 250px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 0 50px 80px 225px;
+    background-position: 46px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 25px 80px;
+    background-image: none;
+  }
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #041827;
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.about__text-wrapper {
+  margin-bottom: 35px;
+
+  line-height: 21px;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.about__text {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.about__button {
+  width: 180px;
+  padding: 11px 13px;
+  border: 1px solid #00B2FF;
+  border-radius: 3px;
+
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #00B2FF;
+
+  background-color: inherit;
+
+  @media (max-width: 767px) {
+    width: 160px;
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.is-close .about__text--hidden {
+  display: none;
+}
+
+.is-close .about__text--mobile-hidden {
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
