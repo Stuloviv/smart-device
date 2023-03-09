@@ -1,0 +1,143 @@
+.callback-form{
+  display: grid;
+  grid-template-columns: 47% 47%;
+  column-gap: 30px;
+  row-gap: 20px;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--modal {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "PT Mono", Arial, Helvetica, sans-serif;
+  }
+}
+
+.callback-form__field {
+  padding: 15px;
+  border: none;
+  border-radius: 3px;
+
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: rgba(4, 20, 39, 0.15);
+
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+.callback-form__field--name {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.callback-form__field--phone {}
+
+.callback-form__field--question {
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+
+  margin-bottom: 15px;
+  padding: 25px 15px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+}
+
+.callback-form__field--question-modal {
+  margin-bottom: 5px;
+}
+
+.callback-form__submit {
+  width: 96%;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 3px;
+
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+
+  background-color: #041427;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  &--modal {
+    width: 100%;
+  }
+}
+
+.callback-form__checkbox {}
+
+.callback-form__checkbox-label {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  align-self: end;
+
+  padding-left: 25px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+
+  color: #ffffff;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 5px;
+  }
+
+  &--modal {
+    margin-left: 9px;
+  }
+}
+
+.callback-form__checkbox-mark {
+  position: absolute;
+  left: 0;
+
+  width: 15px;
+  height: 15px;
+
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.callback-form__checkbox:checked+.callback-form__checkbox-mark::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 9px;
+  height: 6px;
+
+  background-image: url("../../img/icons/icon-check-mark.svg");
+  background-size: 9px 6px;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+

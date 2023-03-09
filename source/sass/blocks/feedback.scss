@@ -1,0 +1,116 @@
+.feedback {
+  background-color: #00B3FF;
+  background-image: url('../../img/background-feedback.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/background-feedback@2x.png');
+    background-size: contain;
+  }
+
+  @media (max-width: 1023px) {
+    background-image: none;
+  }
+}
+
+.feedback__container {
+  padding: 170px 10px 250px;
+
+  @media (max-width: 1919px) {
+    padding: 170px 30px 250px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 50px 50px 125px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 25px 90px;
+  }
+}
+
+.feedback__wrapper {
+  position: relative;
+  width: 47.5%;
+  margin-left: auto;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 20%;
+    left: calc(-100% - 4vw);
+    width: 510px;
+    height: 285px;
+
+    background-image: url("../../img/paper-airplane.png");
+    background-size: 510px 285px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+
+      background-image: url("../../img/paper-airplane@2x.png");
+    }
+  }
+
+  @media (max-width: 1919px) {
+
+    &::before {
+      background-size: calc(510px - 4vw) 285px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    width: 100%;
+
+    &::before {
+      display: none;
+    }
+  }
+
+}
+
+.feedback__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #ffffff;
+
+  @media (max-width: 1919px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.feedback__text {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
