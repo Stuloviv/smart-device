@@ -5,7 +5,7 @@
 
 .footer__container {
   display: flex;
-  padding: 55px 0;
+  padding: 49px 0 36px 0;
 
   @media (max-width: 1919px) {
     justify-content: space-between;
@@ -14,8 +14,8 @@
 
   @media (max-width: 1023px) {
     display: grid;
-    grid-template-columns: 350px 320px;
-    padding: 50px 45px 65px 50px;
+    grid-template-columns: 324px 324px;
+    padding: 50px 45px 55px 50px;
   }
 
   @media (max-width: 767px) {
@@ -47,19 +47,19 @@
     flex-direction: column;
 
     width: 320px;
-    margin: 0 auto 25px;
+    margin: 0 auto 21px;
   }
 }
 
 .footer__logo {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
   @media (max-width: 1023px) {
     margin-bottom: 0;
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 }
 
@@ -82,6 +82,8 @@
 
   margin-right: 15px;
 
+  cursor: pointer;
+
   &:last-child {
     margin-right: 0;
   }
@@ -94,6 +96,7 @@
 .footer__social-icon {}
 
 .footer__site-navigation {
+  padding-top: 8px;
   overflow: hidden;
 
   @media (max-width: 1919px) {
@@ -102,11 +105,12 @@
 
   @media (max-width: 1023px) {
     margin: 0;
+    padding-top: 0;
   }
 
   @media (max-width: 767px) {
     position: relative;
-    padding: 20px 0;
+    padding: 22px 0;
 
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
@@ -145,7 +149,7 @@
 .footer__site-navigation-list {
   column-count: 2;
 
-  height: 130px;
+  height: 150px;
 
   @media (max-width: 1023px) {
     column-count: 1;
@@ -164,8 +168,8 @@
 
 .footer__site-navigation-item {
   max-width: 220px;
-  margin-right: 30px;
-  margin-bottom: 2px;
+  margin-right: 14px;
+  margin-bottom: 5px;
 
   @media (max-width: 1919px) {
     width: 200px;
@@ -175,7 +179,7 @@
   @media (max-width: 1023px) {
     width: 220px;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
   @media (max-width: 767px) {
@@ -198,6 +202,7 @@
 .footer__contacts {
   width: 345px;
   margin-left: auto;
+  padding-top: 8px;
 
   @media (max-width: 1919px) {
     width: 245px;
@@ -207,6 +212,7 @@
   @media (max-width: 1023px) {
     width: auto;
     margin-left: 0;
+    padding-top: 0;
   }
 
   @media (max-width: 767px) {
@@ -219,7 +225,7 @@
 
 .footer__contacts-address {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 
   color: inherit;
 
@@ -232,7 +238,7 @@
 .footer__contacts-phone-list {}
 
 .footer__contacts-phone-item {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 
   @media (max-width: 767px) {
     margin-bottom: 0;
@@ -274,6 +280,8 @@
     height: 1px;
 
     background-color: #fff;
+
+    cursor: pointer;
   }
 
   &::after {

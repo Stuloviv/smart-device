@@ -21,16 +21,19 @@
     background-position: 46px 0;
   }
 
-  // Не пропадает фоновое изображение 2022 не понимаю.
   @media (max-width: 767px) {
-    padding: 0 25px 80px;
+    padding: 0 25px 77px;
+    background-image: none;
+  }
+
+  @media (max-width: 767px) and (min-resolution: 2dppx) {
     background-image: none;
   }
 }
 
 .about__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   font-size: 36px;
@@ -45,24 +48,33 @@
 }
 
 .about__text-wrapper {
-  margin-bottom: 35px;
+  margin-bottom: 42px;
 
   line-height: 21px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 23px;
+  }
 
   @media (max-width: 767px) {
     font-size: 14px;
     line-height: 19px;
+    margin-bottom: 15px;
   }
 }
 
 .about__text {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 23px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 18px;
+  }
 }
 
 .about__button {
   width: 180px;
-  padding: 11px 13px;
+  padding: 13px 13px;
   border: 1px solid #00B2FF;
   border-radius: 3px;
 
@@ -76,9 +88,13 @@
 
   background-color: inherit;
 
+  cursor: pointer;
+  user-select: none;
+
   @media (max-width: 767px) {
     width: 160px;
     padding: 8px 15px;
+
     font-size: 14px;
     line-height: 16px;
   }

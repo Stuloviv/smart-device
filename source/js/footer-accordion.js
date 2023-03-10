@@ -1,12 +1,10 @@
 const navigationElement = document.querySelector('.footer__site-navigation');
-const navigationToggle = navigationElement.querySelector('.footer__site-navigation-toggle');
 const contactsElement = document.querySelector('.footer__contacts');
-const contactsToggle = contactsElement.querySelector('.footer__contacts-toggle');
 
 navigationElement.classList.remove('no-js');
 contactsElement.classList.remove('no-js');
 
-navigationToggle.addEventListener('click', function () {
+navigationElement.addEventListener('click', function () {
   if (navigationElement.classList.contains('is-close')) {
     navigationElement.classList.remove('is-close');
     navigationElement.classList.add('is-open');
@@ -19,7 +17,7 @@ navigationToggle.addEventListener('click', function () {
   }
 });
 
-contactsToggle.addEventListener('click', function () {
+contactsElement.addEventListener('click', function () {
   if (contactsElement.classList.contains('is-close')) {
     contactsElement.classList.remove('is-close');
     contactsElement.classList.add('is-open');

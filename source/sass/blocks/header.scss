@@ -115,7 +115,7 @@
   }
 }
 
-.header__callback {
+.header__callback-button {
   padding: 10px 16px;
   border: 1px solid #F2F5F6;
   border-radius: 3px;
@@ -129,6 +129,9 @@
   color: #F2F5F6;
 
   background-color: #041827;
+
+  cursor: pointer;
+  user-select: none;
 
   @media (max-width: 1023px) {
     display: none;

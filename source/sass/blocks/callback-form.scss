@@ -1,6 +1,6 @@
 .callback-form{
   display: grid;
-  grid-template-columns: 47% 47%;
+  grid-template-columns: 48% 48%;
   column-gap: 30px;
   row-gap: 20px;
 
@@ -49,8 +49,15 @@
   margin-bottom: 15px;
   padding: 25px 15px;
 
+  @media (max-width: 1023px) {
+    padding-top: 29px;
+    padding-bottom: 20px;
+  }
+
   @media (max-width: 767px) {
     margin-bottom: 10px;
+    padding-top: 22px;
+    padding-bottom: 52px;
   }
 }
 
@@ -74,6 +81,13 @@
 
   background-color: #041427;
 
+  cursor: pointer;
+  user-select: none;
+
+  @media (max-width: 1023px) {
+    width: 83%;
+  }
+
   @media (max-width: 767px) {
     width: 100%;
     margin-bottom: 5px;
@@ -84,7 +98,8 @@
   }
 }
 
-.callback-form__checkbox {}
+.callback-form__checkbox {
+}
 
 .callback-form__checkbox-label {
   position: relative;
@@ -96,6 +111,7 @@
   grid-column: 2 / 3;
   align-self: end;
 
+  margin-left: 11px;
   padding-left: 25px;
 
   font-size: 14px;
@@ -106,6 +122,11 @@
 
   @media (max-width: 1023px) {
     margin-bottom: 5px;
+    margin-left: 0;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 5px;
   }
 
   &--modal {
@@ -122,6 +143,12 @@
 
   border: 1px solid #ffffff;
   border-radius: 2px;
+
+  cursor: pointer;
+}
+
+.callback-form__checkbox-mark-text {
+  cursor: pointer;
 }
 
 .callback-form__checkbox:checked+.callback-form__checkbox-mark::after {
