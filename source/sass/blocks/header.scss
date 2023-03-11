@@ -38,7 +38,7 @@
 .header__logo {
   margin-right: 160px;
   padding-top: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 16px;
 
   @media (max-width: 1919px) {
     margin-right: auto;
@@ -48,12 +48,25 @@
 
   @media (max-width: 767px) {
     padding: 0;
-    padding-top: 4px;
-    margin-right: 109px;
+    padding-top: 3px;
+
   }
 }
 
-.logo__text-slogan {}
+.header__logo-icon {
+
+  @media (min-width: 768px) {
+    &--mobile {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &--desktop {
+      display: none;
+    }
+  }
+}
 
 .header__contact {
   display: flex;
@@ -87,21 +100,27 @@
   }
 
   @media (max-width: 767px) {
-    margin-top: 0;
     align-items: center;
+
+    margin-top: 0;
+    margin-right: 20px;
+
+    &--phone {
+      margin-right: 0;
+    }
+  }
+
+  &:hover .header__contact-mail-icon,
+  &:hover .header__contact-phone-icon {
+    fill: #ffffff;
   }
 }
-
-// Не могу понять почему здесь это не работает
-// .header__contact:last-child {
-//   @media (max-width: 1023px) {
-//     margin-right: 0px;
-//   }
-// }
 
 .header__contact-phone-icon,
 .header__contact-mail-icon {
   margin-right: 15px;
+
+  fill: #00B2FF;
 
   @media (max-width: 1023px) {
     margin: 0;
@@ -132,6 +151,10 @@
 
   cursor: pointer;
   user-select: none;
+
+  &:hover {
+    background-color: #052d4b;
+  }
 
   @media (max-width: 1023px) {
     display: none;

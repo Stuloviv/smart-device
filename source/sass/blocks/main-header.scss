@@ -26,7 +26,7 @@
   padding: 305px 0 280px 125px;
 
   @media (max-width: 1023px) {
-    margin-top: -100px;
+    margin-top: -107px;
     padding: 180px 50px 205px;
   }
 
@@ -84,7 +84,7 @@
   }
 }
 
-.main__header-consult {
+.main__header-consult-button {
   display: block;
 
   width: 410px;
@@ -117,6 +117,10 @@
     font-size: 14px;
     line-height: 16px;
     text-align: center;
+  }
+
+  &:hover {
+    background-color: #177fce;
   }
 }
 

@@ -128,10 +128,10 @@
   }
 }
 
-.services__image {}
-
 .services__item-link {
   display: block;
-}
 
-.visually-hidden {}
+  &:hover{
+    box-shadow: 2px 2px #00B2FF;
+  }
+}

@@ -63,6 +63,13 @@
   &::after {
     transform: translateX(-50%) rotate(-45deg);
   }
+
+  &:hover {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+
+    background-color: #1e9cd2;
+  }
 }
 
 .modal-content {}
