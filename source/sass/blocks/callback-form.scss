@@ -137,6 +137,10 @@
   }
 }
 
+.callback-form__checkbox:focus + .callback-form__checkbox-mark {
+  background-color: #052d4b;
+}
+
 .callback-form__checkbox-mark {
   position: absolute;
   left: 0;

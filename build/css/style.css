@@ -1689,6 +1689,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 60px;
   margin: 0;
   padding: 0;
 }
@@ -1913,6 +1916,10 @@ button,
 
 .callback-form__checkbox-label:hover {
   color: #052d4b;
+}
+
+.callback-form__checkbox:focus + .callback-form__checkbox-mark {
+  background-color: #052d4b;
 }
 
 .callback-form__checkbox-mark {
@@ -2226,6 +2233,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 0;
   }
 
   .services__item {
