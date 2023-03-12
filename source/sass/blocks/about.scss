@@ -1,13 +1,15 @@
 .about__container {
   padding: 0 0 120px 250px;
 
-  background-image: url('../../img/about-year-2022.png');
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  @media (min-width: 768px) {
+    background-image: url('../../img/about-year-2022.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url('../../img/about-year-2022@2x.png');
-    background-size: 150px 320px;
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/about-year-2022@2x.png');
+      background-size: 150px 320px;
+    }
   }
 
   @media (max-width: 1919px) {
@@ -21,11 +23,6 @@
 
   @media (max-width: 767px) {
     padding: 0 25px 77px;
-    background-image: none;
-  }
-
-  @media (max-width: 767px) and (min-resolution: 2dppx) {
-    background-image: none;
   }
 }
 

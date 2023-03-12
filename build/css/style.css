@@ -1606,9 +1606,6 @@ button,
 
 .about__container {
   padding: 0 0 120px 250px;
-  background-image: url("../../img/about-year-2022.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .about__title {
@@ -1740,9 +1737,6 @@ button,
 
 .feedback {
   background-color: #00B3FF;
-  background-image: url("../../img/background-feedback.png");
-  background-repeat: no-repeat;
-  background-position: -6px 0;
 }
 
 .feedback__container {
@@ -1995,6 +1989,34 @@ button,
 @media (min-width: 768px) {
   .header__logo-icon--mobile {
     display: none;
+  }
+
+  .about__container {
+    background-image: url("../../img/about-year-2022.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 2dppx) {
+  .about__container {
+    background-image: url("../../img/about-year-2022@2x.png");
+    background-size: 150px 320px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .feedback {
+    background-image: url("../../img/background-feedback.png");
+    background-repeat: no-repeat;
+    background-position: -6px 0;
+  }
+}
+
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
+  .feedback {
+    background-image: url("../../img/background-feedback@2x.png");
+    background-size: contain;
   }
 }
 
@@ -2249,11 +2271,6 @@ button,
     left: 45px;
   }
 
-  .feedback {
-    background-image: none;
-    background-color: #00B3FF;
-  }
-
   .feedback__container {
     padding: 46px 50px 125px;
   }
@@ -2501,7 +2518,6 @@ button,
 
   .about__container {
     padding: 0 25px 77px;
-    background-image: none;
   }
 
   .about__title {
@@ -2662,12 +2678,6 @@ button,
   }
 }
 
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
-  .about__container {
-    background-image: none;
-  }
-}
-
 @media (hover: hover) {
   .custom-select__item[aria-selected=true]:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.2);
@@ -2682,16 +2692,6 @@ button,
   .main__header {
     background-image: url("../../img/header-background@2x.jpg");
     background-size: cover;
-  }
-
-  .about__container {
-    background-image: url("../../img/about-year-2022@2x.png");
-    background-size: 150px 320px;
-  }
-
-  .feedback {
-    background-image: url("../../img/background-feedback@2x.png");
-    background-size: contain;
   }
 
   .feedback__wrapper::before {

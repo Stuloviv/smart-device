@@ -1,17 +1,15 @@
 .feedback {
   background-color: #00B3FF;
-  background-image: url('../../img/background-feedback.png');
-  background-repeat: no-repeat;
-  background-position: -6px 0;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url('../../img/background-feedback@2x.png');
-    background-size: contain;
-  }
+  @media (min-width: 1024px) {
+    background-image: url('../../img/background-feedback.png');
+    background-repeat: no-repeat;
+    background-position: -6px 0;
 
-  @media (max-width: 1023px) {
-    background-image: none;
-    background-color: #00B3FF;
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/background-feedback@2x.png');
+      background-size: contain;
+    }
   }
 }
 
@@ -120,4 +118,3 @@
     line-height: 19px;
   }
 }
-
