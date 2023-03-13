@@ -4,7 +4,7 @@ const modalContainerElement = document.querySelector('.modal-container');
 const headerCallbackElement = document.querySelector('.header__callback-button');
 const closeButtonElement = modalContainerElement.querySelector('.modal__close-button');
 const modalNameFieldElement = modalContainerElement.querySelector('.callback-form__field--name-modal');
-const pageElement = document.querySelector('.page');
+const pageElement = document.body;
 
 window.focusLock = new FocusLock();
 
