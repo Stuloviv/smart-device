@@ -1,4 +1,4 @@
-.callback-form{
+.callback-form {
   display: grid;
   grid-template-columns: 48% 48%;
   column-gap: 30px;
@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
 
-    font-family: "PT Mono", Arial, Helvetica, sans-serif;
+    font-family: "PT Mono", "Arial", "Helvetica", sans-serif;
   }
 }
 
@@ -69,7 +69,7 @@
   border: none;
   border-radius: 3px;
 
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
@@ -133,7 +133,7 @@
   }
 
   &:hover {
-    color: #052d4b
+    color: #052d4b;
   }
 }
 
@@ -158,7 +158,7 @@
   cursor: pointer;
 }
 
-.callback-form__checkbox:checked+.callback-form__checkbox-mark::after {
+.callback-form__checkbox:checked + .callback-form__checkbox-mark::after {
   content: "";
 
   position: absolute;

@@ -1,13 +1,13 @@
 .feedback {
-  background-color: #00B3FF;
+  background-color: #00b3ff;
 
   @media (min-width: 1024px) {
-    background-image: url('../../img/background-feedback.png');
+    background-image: url("../../img/background-feedback.png");
     background-repeat: no-repeat;
     background-position: -6px 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../../img/background-feedback@2x.png');
+      background-image: url("../../img/background-feedback@2x.png");
       background-size: contain;
     }
   }
@@ -54,7 +54,6 @@
   }
 
   @media (max-width: 1919px) {
-
     &::before {
       background-size: calc(510px - 4vw) 285px;
     }
@@ -67,14 +66,13 @@
       display: none;
     }
   }
-
 }
 
 .feedback__title {
   margin: 0;
   margin-bottom: 13px;
 
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 36px;
   line-height: 50px;
   font-weight: 400;

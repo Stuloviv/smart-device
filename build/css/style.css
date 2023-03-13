@@ -639,7 +639,7 @@ button,
   width: 100%;
   max-width: 1220px;
   margin: 0 auto;
-  font-family: "PTMono";
+  font-family: "PTMono", "Arial", "Helvetica", sans-serif;
   background-color: light-grey;
 }
 
@@ -667,7 +667,7 @@ button,
   height: 610px;
   padding: 38px 40px 40px;
   border-radius: 3px;
-  background-color: #00B3FF;
+  background-color: #00b3ff;
 }
 
 .modal__close-button {
@@ -712,7 +712,7 @@ button,
 .modal__title {
   margin: 0;
   margin-bottom: 6px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 30px;
   line-height: 41px;
   font-weight: 400;
@@ -722,7 +722,7 @@ button,
 .modal__text {
   margin: 0;
   margin-bottom: 36px;
-  font-family: "PT Mono", Arial, Helvetica, sans-serif;
+  font-family: "PT Mono", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
@@ -1284,7 +1284,7 @@ button,
   width: 225px;
   min-height: 20px;
   margin-right: 26px;
-  color: #F2F5F6;
+  color: #f2f5f6;
   overflow: hidden;
 }
 
@@ -1300,20 +1300,20 @@ button,
 .header__contact-phone-icon,
 .header__contact-mail-icon {
   margin-right: 15px;
-  fill: #00B2FF;
+  fill: #00b2ff;
 }
 
 .header__callback-button {
   padding: 10px 16px;
-  border: 1px solid #F2F5F6;
+  border: 1px solid #f2f5f6;
   border-radius: 3px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #F2F5F6;
+  color: #f2f5f6;
   background-color: #041827;
   cursor: pointer;
   -webkit-user-select: none;
@@ -1397,7 +1397,7 @@ button,
 .footer__title {
   margin: 0;
   margin-bottom: 20px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 15px;
   line-height: 16px;
   font-weight: 400;
@@ -1459,7 +1459,7 @@ button,
   left: 0;
   width: 15px;
   height: 1px;
-  background-color: #fff;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -1478,7 +1478,7 @@ button,
   left: 0;
   width: 15px;
   height: 1px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .main__header {
@@ -1495,13 +1495,13 @@ button,
 .main__header-title {
   margin: 0;
   margin-bottom: 32px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 80px;
   line-height: 93px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: #F2F5F6;
+  color: #f2f5f6;
 }
 
 .main__header-about {
@@ -1510,7 +1510,7 @@ button,
   margin-bottom: 47px;
   font-size: 22px;
   line-height: 34px;
-  color: #F2F5F6;
+  color: #f2f5f6;
 }
 
 .main__header-consult-button {
@@ -1518,14 +1518,14 @@ button,
   width: 410px;
   padding: 17px 25px;
   border-radius: 3px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #F2F5F6;
-  background-color: #00B2FF;
+  color: #f2f5f6;
+  background-color: #00b2ff;
   overflow: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1559,8 +1559,8 @@ button,
 
 .advantages__item {
   padding: 40px 40px 35px;
-  border: 1px solid #EBEBEB;
-  border-left: 5px solid #00B2FF;
+  border: 1px solid #ebebeb;
+  border-left: 5px solid #00b2ff;
   line-height: 21px;
   color: #041827;
   -webkit-box-sizing: border-box;
@@ -1574,11 +1574,11 @@ button,
 .advantages__item-name {
   margin: 0;
   margin-bottom: 15px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 24px;
   line-height: 33px;
   font-weight: 400;
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .advantages__item-text {
@@ -1588,20 +1588,20 @@ button,
 }
 
 .advantages__item:hover {
-  border-color: #00B2FF;
-  background-color: #00B2FF;
+  border-color: #00b2ff;
+  background-color: #00b2ff;
 }
 
 .advantages__item:hover .advantages__item-icon {
-  fill: #F2F5F6;
+  fill: #f2f5f6;
 }
 
 .advantages__item:hover .advantages__item-name {
-  color: #F2F5F6;
+  color: #f2f5f6;
 }
 
 .advantages__item:hover .advantages__item-text {
-  color: #F2F5F6;
+  color: #f2f5f6;
 }
 
 .about__container {
@@ -1611,7 +1611,7 @@ button,
 .about__title {
   margin: 0;
   margin-bottom: 13px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 36px;
   line-height: 50px;
   font-weight: 400;
@@ -1631,15 +1631,15 @@ button,
 .about__button {
   width: 180px;
   padding: 13px 13px;
-  border: 1px solid #00B2FF;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: #00B2FF;
+  color: #00b2ff;
   background-color: inherit;
   cursor: pointer;
   -webkit-user-select: none;
@@ -1668,7 +1668,7 @@ button,
 .services__title {
   margin: 0;
   margin-bottom: 54px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 36px;
   line-height: 50px;
   font-weight: 400;
@@ -1700,14 +1700,14 @@ button,
   cursor: pointer;
 }
 
-.services__item:after {
+.services__item::after {
   position: absolute;
   bottom: 0;
   right: 0;
   content: "";
   width: 60px;
   height: 60px;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
   background-image: url("../../img/icons/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1719,7 +1719,7 @@ button,
   left: 40px;
   width: 170px;
   margin: 0;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
@@ -1731,12 +1731,12 @@ button,
 }
 
 .services__item-link:hover {
-  -webkit-box-shadow: 2px 2px #00B2FF;
-  box-shadow: 2px 2px #00B2FF;
+  -webkit-box-shadow: 2px 2px #00b2ff;
+  box-shadow: 2px 2px #00b2ff;
 }
 
 .feedback {
-  background-color: #00B3FF;
+  background-color: #00b3ff;
 }
 
 .feedback__container {
@@ -1764,7 +1764,7 @@ button,
 .feedback__title {
   margin: 0;
   margin-bottom: 13px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 36px;
   line-height: 50px;
   font-weight: 400;
@@ -1799,7 +1799,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: "PT Mono", Arial, Helvetica, sans-serif;
+  font-family: "PT Mono", "Arial", "Helvetica", sans-serif;
 }
 
 .callback-form__field {
@@ -1857,7 +1857,7 @@ button,
   padding: 13px 25px;
   border: none;
   border-radius: 3px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
@@ -2196,7 +2196,7 @@ button,
   }
 
   .main__header-title {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: 64px;
     line-height: 75px;
   }

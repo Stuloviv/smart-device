@@ -26,10 +26,8 @@
   padding: 38px 40px 40px;
   border-radius: 3px;
 
-  background-color: #00B3FF;
+  background-color: #00b3ff;
 }
-
-.modal-callback {}
 
 .modal__close-button {
   position: absolute;
@@ -72,13 +70,11 @@
   }
 }
 
-.modal-content {}
-
 .modal__title {
   margin: 0;
   margin-bottom: 6px;
 
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 30px;
   line-height: 41px;
   font-weight: 400;
@@ -89,7 +85,7 @@
   margin: 0;
   margin-bottom: 36px;
 
-  font-family: "PT Mono", Arial, Helvetica, sans-serif;
+  font-family: "PT Mono", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;

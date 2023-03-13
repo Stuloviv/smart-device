@@ -42,4 +42,3 @@ if (modalContainerElement.classList.contains('is-close')) {
     modalClose();
   });
 }
-

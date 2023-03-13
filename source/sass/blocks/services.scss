@@ -22,7 +22,7 @@
   margin: 0;
   margin-bottom: 54px;
 
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 36px;
   line-height: 50px;
   font-weight: 400;
@@ -74,7 +74,7 @@
 
   cursor: pointer;
 
-  &:after {
+  &::after {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -83,8 +83,8 @@
     width: 60px;
     height: 60px;
 
-    background-color: #00B2FF;
-    background-image: url('../../img/icons/icon-arrow.svg');
+    background-color: #00b2ff;
+    background-image: url("../../img/icons/icon-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -112,7 +112,7 @@
   width: 170px;
   margin: 0;
 
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
@@ -134,7 +134,7 @@
 .services__item-link {
   display: block;
 
-  &:hover{
-    box-shadow: 2px 2px #00B2FF;
+  &:hover {
+    box-shadow: 2px 2px #00b2ff;
   }
 }

@@ -2,12 +2,12 @@
   padding: 0 0 120px 250px;
 
   @media (min-width: 768px) {
-    background-image: url('../../img/about-year-2022.png');
+    background-image: url("../../img/about-year-2022.png");
     background-repeat: no-repeat;
     background-position: 0 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../../img/about-year-2022@2x.png');
+      background-image: url("../../img/about-year-2022@2x.png");
       background-size: 150px 320px;
     }
   }
@@ -30,7 +30,7 @@
   margin: 0;
   margin-bottom: 13px;
 
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 36px;
   line-height: 50px;
   font-weight: 400;
@@ -70,16 +70,16 @@
 .about__button {
   width: 180px;
   padding: 13px 13px;
-  border: 1px solid #00B2FF;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
 
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: #00B2FF;
+  color: #00b2ff;
 
   background-color: inherit;
 
@@ -106,8 +106,8 @@
 }
 
 .is-close .about__text-mobile-hidden {
-
   @media (max-width: 767px) {
+
     display: none;
   }
 }
