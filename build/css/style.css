@@ -650,7 +650,7 @@ button,
 .modal-container {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -7;
   z-index: 11;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1347,7 +1347,7 @@ button,
 }
 
 .footer__social {
-  margin-left: 10px;
+  margin-left: 3px;
 }
 
 .footer__social-list {
@@ -1780,18 +1780,18 @@ button,
   color: #ffffff;
 }
 
-.callback-form {
+.callback-form form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 48% 48%;
-  grid-template-columns: 48% 48%;
+  -ms-grid-columns: 47% 47%;
+  grid-template-columns: 47% 47%;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
   row-gap: 20px;
 }
 
-.callback-form--modal {
+.callback-form--modal form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1802,7 +1802,9 @@ button,
   font-family: "PT Mono", "Arial", "Helvetica", sans-serif;
 }
 
-.callback-form__field {
+.callback-form input[type=text],
+.callback-form input[type=tel],
+.callback-form textarea {
   padding: 15px;
   border: none;
   border-radius: 3px;
@@ -1813,33 +1815,37 @@ button,
   background-color: rgba(4, 20, 39, 0.15);
 }
 
-.callback-form__field::-webkit-input-placeholder {
+.callback-form input[type=text]::-webkit-input-placeholder,
+.callback-form input[type=tel]::-webkit-input-placeholder,
+.callback-form textarea::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.callback-form__field::-moz-placeholder {
+.callback-form input[type=text]::-moz-placeholder,
+.callback-form input[type=tel]::-moz-placeholder,
+.callback-form textarea::-moz-placeholder {
   color: #ffffff;
 }
 
-.callback-form__field:-ms-input-placeholder {
+.callback-form input[type=text]:-ms-input-placeholder,
+.callback-form input[type=tel]:-ms-input-placeholder,
+.callback-form textarea:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.callback-form__field::-ms-input-placeholder {
+.callback-form input[type=text]::-ms-input-placeholder,
+.callback-form input[type=tel]::-ms-input-placeholder,
+.callback-form textarea::-ms-input-placeholder {
   color: #ffffff;
 }
 
-.callback-form__field::placeholder {
+.callback-form input[type=text]::placeholder,
+.callback-form input[type=tel]::placeholder,
+.callback-form textarea::placeholder {
   color: #ffffff;
 }
 
-.callback-form__field--name {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 400;
-}
-
-.callback-form__field--question {
+.callback-form textarea {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -1848,12 +1854,12 @@ button,
   padding: 25px 15px;
 }
 
-.callback-form__field--question-modal {
+.callback-form--modal textarea {
   margin-bottom: 5px;
 }
 
-.callback-form__submit {
-  width: 96%;
+.callback-form button {
+  width: 100%;
   padding: 13px 25px;
   border: none;
   border-radius: 3px;
@@ -1872,15 +1878,11 @@ button,
   user-select: none;
 }
 
-.callback-form__submit--modal {
-  width: 100%;
-}
-
-.callback-form__submit:hover {
+.callback-form button:hover {
   background-color: #052d4b;
 }
 
-.callback-form__checkbox-label {
+.callback-form__checkbox-wrapper {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1904,20 +1906,14 @@ button,
   color: #ffffff;
 }
 
-.callback-form__checkbox-label--modal {
+.callback-form__checkbox-wrapper--modal {
   margin-left: 9px;
 }
 
-.callback-form__checkbox-label:hover {
-  color: #052d4b;
-}
-
-.callback-form__checkbox:focus + .callback-form__checkbox-mark {
-  background-color: #052d4b;
-}
-
-.callback-form__checkbox-mark {
+.callback-form input[type=checkbox] + label::before {
+  content: "";
   position: absolute;
+  top: 7px;
   left: 0;
   width: 15px;
   height: 15px;
@@ -1926,23 +1922,27 @@ button,
   cursor: pointer;
 }
 
-.callback-form__checkbox-mark-text {
+.callback-form input[type=checkbox]:hover + label::before,
+.callback-form input[type=checkbox]:focus + label::before {
+  background-color: #052d4b;
+}
+
+.callback-form input[type=checkbox]:hover + label,
+.callback-form input[type=checkbox]:focus + label {
+  color: #052d4b;
   cursor: pointer;
 }
 
-.callback-form__checkbox:checked + .callback-form__checkbox-mark::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 9px;
-  height: 6px;
+.callback-form--modal input[type=checkbox] + label::before {
+  top: 0;
+  left: -2px;
+}
+
+.callback-form input[type=checkbox]:checked + label::before {
   background-image: url("../../img/icons/icon-check-mark.svg");
   background-size: 9px 6px;
   background-repeat: no-repeat;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  background-position: 20% 50%;
 }
 
 /* @mixin hover-focus {
@@ -2155,7 +2155,7 @@ button,
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-right: 0;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   .footer__logo-icon {
@@ -2292,16 +2292,21 @@ button,
     margin-bottom: 25px;
   }
 
-  .callback-form__field--question {
+  .callback-form form {
+    -ms-grid-columns: 48% 48%;
+    grid-template-columns: 48% 48%;
+  }
+
+  .callback-form textarea {
     padding-top: 29px;
     padding-bottom: 20px;
   }
 
-  .callback-form__submit {
+  .callback-form button {
     width: 83%;
   }
 
-  .callback-form__checkbox-label {
+  .callback-form__checkbox-wrapper {
     margin-bottom: 5px;
     margin-left: 0;
   }
@@ -2317,7 +2322,7 @@ button,
   }
 
   .header__container {
-    padding: 10px 35px 20px 26px;
+    padding: 10px 35px 22px 26px;
   }
 
   .header__logo {
@@ -2357,7 +2362,8 @@ button,
   }
 
   .footer__logo-icon {
-    margin-bottom: 18px;
+    margin-bottom: 11px;
+    margin-left: -5px;
   }
 
   .footer__site-navigation {
@@ -2589,7 +2595,7 @@ button,
     line-height: 19px;
   }
 
-  .callback-form {
+  .callback-form form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2599,18 +2605,18 @@ button,
     flex-direction: column;
   }
 
-  .callback-form__field--question {
+  .callback-form textarea {
     margin-bottom: 10px;
     padding-top: 22px;
     padding-bottom: 52px;
   }
 
-  .callback-form__submit {
+  .callback-form button {
     width: 100%;
     margin-bottom: 5px;
   }
 
-  .callback-form__checkbox-label {
+  .callback-form__checkbox-wrapper {
     margin-left: 5px;
   }
 }

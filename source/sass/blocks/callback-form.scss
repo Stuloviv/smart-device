@@ -1,23 +1,29 @@
-.callback-form {
+.callback-form form {
   display: grid;
-  grid-template-columns: 48% 48%;
+  grid-template-columns: 47% 47%;
   column-gap: 30px;
   row-gap: 20px;
+
+  @media (max-width: 1023px) {
+    grid-template-columns: 48% 48%;
+  }
 
   @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
   }
-
-  &--modal {
-    display: flex;
-    flex-direction: column;
-
-    font-family: "PT Mono", "Arial", "Helvetica", sans-serif;
-  }
 }
 
-.callback-form__field {
+.callback-form--modal form {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "PT Mono", "Arial", "Helvetica", sans-serif;
+}
+
+.callback-form input[type="text"],
+.callback-form input[type="tel"],
+.callback-form textarea {
   padding: 15px;
   border: none;
   border-radius: 3px;
@@ -34,13 +40,7 @@
   }
 }
 
-.callback-form__field--name {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 400;
-}
-
-.callback-form__field--question {
+.callback-form textarea {
   grid-row: 2 / 3;
   grid-column: 1 / -1;
 
@@ -59,12 +59,12 @@
   }
 }
 
-.callback-form__field--question-modal {
+.callback-form--modal textarea {
   margin-bottom: 5px;
 }
 
-.callback-form__submit {
-  width: 96%;
+.callback-form button {
+  width: 100%;
   padding: 13px 25px;
   border: none;
   border-radius: 3px;
@@ -82,6 +82,10 @@
   cursor: pointer;
   user-select: none;
 
+  &:hover {
+    background-color: #052d4b;
+  }
+
   @media (max-width: 1023px) {
     width: 83%;
   }
@@ -90,17 +94,9 @@
     width: 100%;
     margin-bottom: 5px;
   }
-
-  &--modal {
-    width: 100%;
-  }
-
-  &:hover {
-    background-color: #052d4b;
-  }
 }
 
-.callback-form__checkbox-label {
+.callback-form__checkbox-wrapper {
   position: relative;
 
   display: flex;
@@ -131,18 +127,13 @@
   &--modal {
     margin-left: 9px;
   }
-
-  &:hover {
-    color: #052d4b;
-  }
 }
 
-.callback-form__checkbox:focus + .callback-form__checkbox-mark {
-  background-color: #052d4b;
-}
+.callback-form input[type="checkbox"] + label::before {
+  content: "";
 
-.callback-form__checkbox-mark {
   position: absolute;
+  top: 7px;
   left: 0;
 
   width: 15px;
@@ -154,22 +145,26 @@
   cursor: pointer;
 }
 
-.callback-form__checkbox-mark-text {
+.callback-form input[type="checkbox"]:hover + label::before,
+.callback-form input[type="checkbox"]:focus + label::before {
+  background-color: #052d4b;
+}
+
+.callback-form input[type="checkbox"]:hover + label,
+.callback-form input[type="checkbox"]:focus + label {
+  color: #052d4b;
+
   cursor: pointer;
 }
 
-.callback-form__checkbox:checked + .callback-form__checkbox-mark::after {
-  content: "";
+.callback-form--modal input[type="checkbox"] + label::before {
+  top: 0;
+  left: -2px;
+}
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 9px;
-  height: 6px;
-
+.callback-form input[type="checkbox"]:checked + label::before {
   background-image: url("../../img/icons/icon-check-mark.svg");
   background-size: 9px 6px;
   background-repeat: no-repeat;
-  transform: translate(-50%, -50%);
+  background-position: 20% 50%;
 }
