@@ -650,11 +650,10 @@ button,
 .modal-container {
   position: fixed;
   top: 0;
-  left: -7;
   z-index: 11;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -662,7 +661,6 @@ button,
 
 .modal {
   position: relative;
-  margin: 146px auto;
   width: 500px;
   height: 610px;
   padding: 38px 40px 40px;
@@ -2304,6 +2302,10 @@ button,
 
   .callback-form button {
     width: 83%;
+  }
+
+  .callback-form--modal button {
+    width: 100%;
   }
 
   .callback-form__checkbox-wrapper {

@@ -96,6 +96,12 @@
   }
 }
 
+.callback-form--modal button {
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+}
+
 .callback-form__checkbox-wrapper {
   position: relative;
 
