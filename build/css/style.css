@@ -1481,7 +1481,7 @@ button,
 
 .main__header {
   background-color: #041827;
-  background-image: url("../../img/header-background.jpg");
+  background-image: url("../img/header-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1706,7 +1706,7 @@ button,
   width: 60px;
   height: 60px;
   background-color: #00b2ff;
-  background-image: url("../../img/icons/icon-arrow.svg");
+  background-image: url("../img/icons/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1754,7 +1754,7 @@ button,
   left: calc(-100% - 2vw);
   width: 510px;
   height: 285px;
-  background-image: url("../../img/paper-airplane.png");
+  background-image: url("../img/paper-airplane.png");
   background-size: 510px 285px;
   background-repeat: no-repeat;
 }
@@ -1937,7 +1937,7 @@ button,
 }
 
 .callback-form input[type=checkbox]:checked + label::before {
-  background-image: url("../../img/icons/icon-check-mark.svg");
+  background-image: url("../img/icons/icon-check-mark.svg");
   background-size: 9px 6px;
   background-repeat: no-repeat;
   background-position: 20% 50%;
@@ -1990,7 +1990,7 @@ button,
   }
 
   .about__container {
-    background-image: url("../../img/about-year-2022.png");
+    background-image: url("../img/about-year-2022.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -1998,14 +1998,14 @@ button,
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 2dppx) {
   .about__container {
-    background-image: url("../../img/about-year-2022@2x.png");
+    background-image: url("../img/about-year-2022@2x.png");
     background-size: 150px 320px;
   }
 }
 
 @media (min-width: 1024px) {
   .feedback {
-    background-image: url("../../img/background-feedback.png");
+    background-image: url("../img/background-feedback.png");
     background-repeat: no-repeat;
     background-position: -6px 0;
   }
@@ -2013,7 +2013,7 @@ button,
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
   .feedback {
-    background-image: url("../../img/background-feedback@2x.png");
+    background-image: url("../img/background-feedback@2x.png");
     background-size: contain;
   }
 }
@@ -2698,11 +2698,11 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .main__header {
-    background-image: url("../../img/header-background@2x.jpg");
+    background-image: url("../img/header-background@2x.jpg");
     background-size: cover;
   }
 
   .feedback__wrapper::before {
-    background-image: url("../../img/paper-airplane@2x.png");
+    background-image: url("../img/paper-airplane@2x.png");
   }
 }

@@ -1,11 +1,11 @@
 .main__header {
   background-color: #041827;
-  background-image: url("../../img/header-background.jpg");
+  background-image: url("../img/header-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/header-background@2x.jpg");
+    background-image: url("../img/header-background@2x.jpg");
     background-size: cover;
   }
 
