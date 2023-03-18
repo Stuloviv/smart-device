@@ -64,6 +64,14 @@
     flex-direction: column;
     gap: 0;
   }
+
+  @media (min-width: 620px) and (max-width: 767px) {
+    display: grid;
+    grid-template-columns: 270px 270px;
+
+    width: 570px;
+    margin: 0 auto;
+  }
 }
 
 .services__item {
@@ -98,6 +106,9 @@
   }
 
   @media (max-width: 767px) {
+    width: 270px;
+    margin: 0 auto;
+
     &::after {
       width: 40px;
       height: 40px;

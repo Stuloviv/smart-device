@@ -87,11 +87,15 @@
   user-select: none;
 
   @media (max-width: 767px) {
-    width: 160px;
+    width: 100%;
     padding: 8px 15px;
 
     font-size: 14px;
     line-height: 16px;
+  }
+
+  @media (width: 320px) {
+    width: 160px;
   }
 
   &:hover {

@@ -1,6 +1,7 @@
 import './footer-accordion.js';
 import './open-about.js';
 import './open-modal.js';
+import './phone-validation.js';
 
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
