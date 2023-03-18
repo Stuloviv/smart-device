@@ -1,9 +1,11 @@
 const phoneElements = document.querySelectorAll('input[type="tel"]');
 const buttonElements = document.querySelectorAll('button[type="submit"]');
 
+const PHONE_NUMBER_LENGTH_WITH_MASK = 18;
+
 phoneElements.forEach((phoneElement) => {
   phoneElement.addEventListener('keydown', () => {
-    if (phoneElement.value.length !== 18) {
+    if (phoneElement.value.length !== PHONE_NUMBER_LENGTH_WITH_MASK) {
       phoneElement.style.backgroundColor = '#ff9999';
       buttonElements.forEach((button) => {
         button.setAttribute('disabled', 'true');
