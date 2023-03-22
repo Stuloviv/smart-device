@@ -43,3 +43,5 @@ if (modalContainerElement.classList.contains('is-close')) {
     modalClose();
   });
 }
+
+export {modalClose};

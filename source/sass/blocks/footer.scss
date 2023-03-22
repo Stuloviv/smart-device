@@ -46,6 +46,14 @@
   }
 
   @media (max-width: 767px) {
+    flex-direction: row;
+
+    width: 100%;
+    margin: 0 0 21px;
+    padding: 0 25px;
+  }
+
+  @media (max-width: 450px) {
     flex-direction: column;
 
     width: 320px;
@@ -147,8 +155,8 @@
   color: #ffffff;
 
   @media (max-width: 767px) {
-    width: 320px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     padding: 0 25px;
   }
 }
@@ -179,7 +187,7 @@
   @media (max-width: 767px) {
     display: block;
 
-    width: 320px;
+    width: 100%;;
     margin: 15px auto 0;
     padding: 0 25px;
   }
@@ -211,7 +219,7 @@
 .footer__contacts-wrapper {
   @media (max-width: 767px) {
     display: block;
-    width: 320px;
+    width: 100%;
     margin: 17px auto 0;
     padding: 0 25px;
   }

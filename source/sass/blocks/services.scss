@@ -64,13 +64,13 @@
     flex-direction: column;
     gap: 0;
   }
+}
 
-  @media (min-width: 620px) and (max-width: 767px) {
-    display: grid;
-    grid-template-columns: 270px 270px;
+.services img {
 
-    width: 570px;
-    margin: 0 auto;
+  @media (min-width: 321px) and (max-width: 767px) {
+    object-fit: cover;
+    min-height: 270px;
   }
 }
 
@@ -106,8 +106,6 @@
   }
 
   @media (max-width: 767px) {
-    width: 270px;
-    margin: 0 auto;
 
     &::after {
       width: 40px;
